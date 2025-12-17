@@ -1,0 +1,131 @@
+.nosotros {
+  padding: 6rem 2rem;
+  background: linear-gradient(180deg, #fafafa 0%, #ffffff 100%);
+}
+
+.nosotros-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nosotros-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.nosotros-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.section-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
+
+.nosotros-description {
+  font-size: 1.125rem;
+  color: #666;
+  line-height: 1.8;
+}
+
+.beneficios-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.beneficio-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #333;
+  font-size: 1rem;
+}
+
+.check-icon {
+  color: #e6b800;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.nosotros-image {
+  position: relative;
+}
+
+.image-placeholder {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.image-placeholder:hover {
+  transform: scale(1.02);
+}
+
+.hero-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+.experience-badge {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(26, 26, 26, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: var(--shadow-md);
+}
+
+.badge-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #e6b800;
+  line-height: 1;
+}
+
+.badge-text {
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  opacity: 0.9;
+}
+
+@media (max-width: 968px) {
+  .nosotros-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .nosotros-image {
+    order: -1;
+  }
+
+  .beneficios-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .nosotros {
+    padding: 3rem 1rem;
+  }
+
+  .hero-image {
+    height: 300px;
+  }
+}
+

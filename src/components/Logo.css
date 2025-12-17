@@ -1,0 +1,86 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.logo.simple {
+  justify-content: flex-start;
+}
+
+.logo-image-full,
+.logo-image-simple {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* Para el header - logo simple */
+.logo.simple .logo-image-simple {
+  max-height: 60px;
+  width: auto;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.logo-company-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  letter-spacing: -0.5px;
+  white-space: nowrap;
+}
+
+/* Para el footer - logo completo */
+.logo.full .logo-image-full {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+}
+
+/* Fallback cuando no hay imagen */
+.logo-fallback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.logo-text-fallback {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  letter-spacing: 0.5px;
+}
+
+.logo-text-fallback-small {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-gray);
+  letter-spacing: 0.3px;
+}
+
+.logo.simple .logo-text-fallback {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .logo.simple .logo-image-simple {
+    max-height: 45px;
+  }
+
+  .logo.full .logo-image-full {
+    max-width: 280px;
+  }
+
+  .logo.simple .logo-text-fallback {
+    font-size: 1rem;
+  }
+
+  .logo-company-name {
+    font-size: 1.25rem;
+  }
+}
+
