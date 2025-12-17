@@ -33,21 +33,35 @@ const Contacto = () => {
 
           <div className="contacto-card">
             <div className="contacto-icon">
-              <FaMapMarkerAlt />
-            </div>
-            <h3 className="contacto-card-title">Ubicación</h3>
-            <p className="contacto-text">
-              Duitama, Boyacá<br />
-              Carrera 19 No. 4-50
-            </p>
-          </div>
-
-          <div className="contacto-card">
-            <div className="contacto-icon">
               <FaClock />
             </div>
             <h3 className="contacto-card-title">Horario</h3>
             <p className="contacto-text">24 horas - 7 días</p>
+          </div>
+        </div>
+
+        <div className="ubicacion-section">
+          <div className="ubicacion-header">
+            <div className="ubicacion-icon">
+              <FaMapMarkerAlt />
+            </div>
+            <h3 className="ubicacion-title">Ubicación</h3>
+            <p className="ubicacion-address">
+              Duitama, Boyacá<br />
+              Carrera 19 No. 4-50
+            </p>
+          </div>
+          <div className="mapa-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.1234567890123!2d-73.039309!3d5.820721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a3f760c743069%3A0xcf4014a1183b09e4!2sCra%2019%20%234-50%2C%20Duitama%2C%20Boyac%C3%A1!5e0!3m2!1ses!2sco!4v1700000000000!5m2!1ses!2sco"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Ubicación Tax Duitama S.A.S. - Carrera 19 No. 4-50, Duitama, Boyacá"
+            />
           </div>
         </div>
 

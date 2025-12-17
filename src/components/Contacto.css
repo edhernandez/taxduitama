@@ -136,6 +136,65 @@
   margin: 0;
 }
 
+.ubicacion-section {
+  background: var(--bg-white);
+  padding: 3rem;
+  border-radius: 24px;
+  box-shadow: 0 6px 24px rgba(255, 184, 0, 0.18);
+  margin-bottom: 4rem;
+  border: 2px solid rgba(255, 184, 0, 0.15);
+  position: relative;
+  z-index: 1;
+}
+
+.ubicacion-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.ubicacion-icon {
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(135deg, rgba(255, 184, 0, 0.2) 0%, rgba(255, 213, 79, 0.15) 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  font-size: 2.25rem;
+  color: var(--primary-gold);
+  box-shadow: 0 4px 12px rgba(255, 184, 0, 0.2);
+}
+
+.ubicacion-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.ubicacion-address {
+  font-size: 1.125rem;
+  color: #666;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.mapa-container {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.mapa-container iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+  border-radius: 20px;
+  display: block;
+}
+
 .app-section {
   background: var(--bg-white);
   padding: 3.5rem;
@@ -262,6 +321,18 @@
   .cta-button {
     width: 100%;
     justify-content: center;
+  }
+
+  .ubicacion-section {
+    padding: 2rem 1.5rem;
+  }
+
+  .ubicacion-title {
+    font-size: 1.75rem;
+  }
+
+  .mapa-container iframe {
+    height: 300px;
   }
 }
 
