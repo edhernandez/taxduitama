@@ -24,15 +24,6 @@ const Hero = () => {
         
         <div className="hero-buttons">
           <a 
-            href="https://wa.me/573238344040" 
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-primary"
-          >
-            <FaWhatsapp />
-            Solicitar por WhatsApp
-          </a>
-          <a 
             href="https://play.google.com/store/apps/details?id=com.duitaxicootrachica.duitama&hl=es_CO"
             target="_blank"
             rel="noopener noreferrer"
@@ -43,6 +34,15 @@ const Hero = () => {
               alt="Descargar Dui taxi App"
               className="app-icon-button"
             />
+          </a>
+          <a 
+            href="https://wa.me/573238344040" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary"
+          >
+            <FaWhatsapp />
+            Solicitar por WhatsApp
           </a>
         </div>
       </div>

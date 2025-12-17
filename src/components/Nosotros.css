@@ -1,6 +1,6 @@
 .nosotros {
   padding: 6rem 2rem;
-  background: linear-gradient(180deg, #fafafa 0%, #ffffff 100%);
+  background: linear-gradient(180deg, #fffef5 0%, #ffffff 100%);
 }
 
 .nosotros-container {
@@ -49,9 +49,10 @@
 }
 
 .check-icon {
-  color: #e6b800;
-  font-size: 1.25rem;
+  color: var(--primary-gold);
+  font-size: 1.35rem;
   flex-shrink: 0;
+  filter: drop-shadow(0 2px 4px rgba(255, 184, 0, 0.3));
 }
 
 .nosotros-image {
@@ -60,14 +61,16 @@
 
 .image-placeholder {
   position: relative;
-  border-radius: 24px;
+  border-radius: 28px;
   overflow: hidden;
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 12px 40px rgba(255, 184, 0, 0.2);
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid rgba(255, 184, 0, 0.1);
 }
 
 .image-placeholder:hover {
-  transform: scale(1.02);
+  transform: scale(1.03);
+  box-shadow: 0 16px 50px rgba(255, 184, 0, 0.3);
 }
 
 .hero-image {

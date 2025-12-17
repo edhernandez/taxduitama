@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaWhatsapp, FaDownload } from 'react-icons/fa'
+import { FaMapMarkerAlt, FaClock, FaWhatsapp } from 'react-icons/fa'
 import './Contacto.css'
 
 const Contacto = () => {
@@ -28,19 +28,6 @@ const Contacto = () => {
               className="contacto-link"
             >
               +57 323 834 4040
-            </a>
-          </div>
-
-          <div className="contacto-card">
-            <div className="contacto-icon">
-              <FaEnvelope />
-            </div>
-            <h3 className="contacto-card-title">Email</h3>
-            <a 
-              href="mailto:taxduitama@gmail.com" 
-              className="contacto-link"
-            >
-              taxduitama@gmail.com
             </a>
           </div>
 

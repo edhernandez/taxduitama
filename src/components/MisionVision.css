@@ -1,6 +1,6 @@
 .mision-vision {
   padding: 6rem 2rem;
-  background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #fffef8 100%);
 }
 
 .mision-vision-container {
@@ -37,11 +37,11 @@
 .info-card {
   background: var(--bg-white);
   padding: 3rem;
-  border-radius: 24px;
-  box-shadow: var(--shadow-sm);
+  border-radius: 28px;
+  box-shadow: 0 4px 16px rgba(255, 184, 0, 0.12);
   text-align: center;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid rgba(212, 175, 55, 0.1);
+  border: 2px solid rgba(255, 184, 0, 0.15);
   position: relative;
   overflow: hidden;
 }
@@ -59,9 +59,9 @@
 }
 
 .info-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-lg);
-  border-color: rgba(212, 175, 55, 0.3);
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 40px rgba(255, 184, 0, 0.25);
+  border-color: rgba(255, 184, 0, 0.4);
 }
 
 .info-card:hover::after {
@@ -69,23 +69,24 @@
 }
 
 .card-icon {
-  width: 90px;
-  height: 90px;
-  background: linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(230, 200, 102, 0.1) 100%);
+  width: 95px;
+  height: 95px;
+  background: linear-gradient(135deg, rgba(255, 184, 0, 0.2) 0%, rgba(255, 213, 79, 0.15) 100%);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 1.5rem;
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   color: var(--primary-gold);
   position: relative;
   z-index: 1;
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(255, 184, 0, 0.2);
 }
 
 .info-card:hover .card-icon {
-  transform: scale(1.1) rotate(5deg);
+  transform: scale(1.15) rotate(8deg);
 }
 
 .card-title {
@@ -160,14 +161,14 @@
   font-weight: 600;
   font-size: 0.95rem;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 2px 8px rgba(212, 175, 55, 0.25);
+  box-shadow: 0 4px 12px rgba(255, 184, 0, 0.3);
   border: none;
 }
 
 .valor-tag:hover {
   background: linear-gradient(135deg, var(--primary-gold-dark) 0%, var(--primary-gold) 100%);
-  transform: translateY(-3px);
-  box-shadow: 0 6px 16px rgba(212, 175, 55, 0.4);
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 184, 0, 0.45);
 }
 
 @media (max-width: 768px) {

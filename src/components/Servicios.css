@@ -38,11 +38,11 @@
 .servicio-card {
   background: var(--bg-white);
   padding: 2.5rem;
-  border-radius: 20px;
-  box-shadow: var(--shadow-sm);
+  border-radius: 24px;
+  box-shadow: 0 4px 16px rgba(255, 184, 0, 0.12);
   text-align: center;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid rgba(212, 175, 55, 0.1);
+  border: 2px solid rgba(255, 184, 0, 0.15);
   position: relative;
   overflow: hidden;
 }
@@ -60,9 +60,9 @@
 }
 
 .servicio-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-lg);
-  border-color: rgba(212, 175, 55, 0.3);
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 40px rgba(255, 184, 0, 0.25);
+  border-color: rgba(255, 184, 0, 0.4);
 }
 
 .servicio-card:hover::before {
@@ -70,7 +70,7 @@
 }
 
 .servicio-icon {
-  font-size: 3.5rem;
+  font-size: 4rem;
   background: var(--gradient-gold);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -79,10 +79,11 @@
   display: flex;
   justify-content: center;
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  filter: drop-shadow(0 2px 4px rgba(255, 184, 0, 0.3));
 }
 
 .servicio-card:hover .servicio-icon {
-  transform: scale(1.1) rotate(5deg);
+  transform: scale(1.15) rotate(8deg);
 }
 
 .servicio-title {
