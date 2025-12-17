@@ -17,7 +17,13 @@
   display: block;
 }
 
-/* Para el header - logo simple */
+/* Para el header - logo completo */
+.logo.full .logo-image-full {
+  max-height: 70px;
+  width: auto;
+  height: auto;
+}
+
 .logo.simple .logo-image-simple {
   max-height: 60px;
   width: auto;
@@ -67,6 +73,10 @@
 }
 
 @media (max-width: 768px) {
+  .logo.full .logo-image-full {
+    max-height: 50px;
+  }
+
   .logo.simple .logo-image-simple {
     max-height: 45px;
   }

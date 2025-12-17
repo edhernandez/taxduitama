@@ -23,7 +23,7 @@ const ImageCarousel = () => {
     {
       type: 'image',
       src: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1200&h=600&fit=crop',
-      alt: 'Tax Duitama - Vehículos de taxi en Duitama, Boyacá disponibles 24/7',
+      alt: 'Tax Duitama S.A.S. - Vehículos de taxi en Duitama, Boyacá disponibles 24/7',
       title: 'Nuestros Vehículos en Duitama'
     },
     {

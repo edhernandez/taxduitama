@@ -7,7 +7,7 @@ const MisionVision = () => {
     <section className="mision-vision">
       <div className="mision-vision-container">
         <div className="mision-vision-header">
-          <h2 className="section-title">Misión y Visión de Tax Duitama</h2>
+          <h2 className="section-title">Misión y Visión de Tax Duitama S.A.S.</h2>
           <p className="section-subtitle">
             Comprometidos con la excelencia en el servicio de transporte de taxis en Duitama, Boyacá
           </p>
@@ -46,7 +46,7 @@ const MisionVision = () => {
         <div className="historia-section">
           <h3 className="historia-title">Nuestra Historia</h3>
             <p className="historia-text">
-              Tax Duitama S.A.S. nació aproximadamente hace seis años, con el propósito 
+              Tax Duitama S.A.S. (Sociedad por Acciones Simplificadas) nació aproximadamente hace seis años, con el propósito 
               esencial de brindar un servicio público de transporte individual urbano tipo 
               taxi en Duitama; de una forma confiable, accesible y segura para todos los habitantes 
               del Municipio de Duitama, Boyacá.
@@ -63,7 +63,7 @@ const MisionVision = () => {
               Hoy seguimos avanzando con la misma visión que nos impulsó desde el comienzo, 
               ser el mejor servicio de taxis en Duitama, un aliado de movilidad para todos, 
               ofreciendo un servicio eficiente, amable y seguro. Nuestra historia es la suma 
-              de miles de recorridos que se han compartido con quienes confían en Tax Duitama 
+              de miles de recorridos que se han compartido con quienes confían en Tax Duitama S.A.S. 
               para llegar a su destino en Duitama y sus alrededores.
             </p>
         </div>

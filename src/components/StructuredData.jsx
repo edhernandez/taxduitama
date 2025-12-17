@@ -7,7 +7,7 @@ const StructuredData = () => {
     "name": "TAX DUITAMA S.A.S.",
     "alternateName": "Tax Duitama",
     "image": "https://taxduitama.com/logo.jpg",
-    "description": "Servicio de taxis en Duitama, Boyacá. Disponible 24/7 con conductores certificados y vehículos seguros. Tax Duitama - El mejor servicio de taxi en Duitama.",
+    "description": "Servicio de taxis en Duitama, Boyacá. Disponible 24/7 con conductores certificados y vehículos seguros. Tax Duitama S.A.S. - El mejor servicio de taxi en Duitama.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Carrera 19 No. 4-50",
@@ -22,7 +22,7 @@ const StructuredData = () => {
       "longitude": -73.0344
     },
     "url": "https://taxduitama.com",
-    "telephone": "+573209781909",
+    "email": "taxduitama@gmail.com",
     "priceRange": "$$",
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",

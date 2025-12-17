@@ -85,23 +85,17 @@
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   color: white;
-  padding: 1.5rem;
+  padding: 1.25rem 1.5rem;
   border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: var(--shadow-md);
 }
 
-.badge-number {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #e6b800;
-  line-height: 1;
-}
-
 .badge-text {
-  font-size: 0.875rem;
-  margin-top: 0.5rem;
-  opacity: 0.9;
+  font-size: 1rem;
+  font-weight: 600;
+  opacity: 0.95;
+  margin: 0;
 }
 
 @media (max-width: 968px) {

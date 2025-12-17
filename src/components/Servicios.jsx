@@ -18,7 +18,7 @@ const Servicios = () => {
     {
       icon: <FaMapMarkerAlt />,
       title: 'Cobertura Total en Duitama',
-      description: 'Servicio de taxi en toda la ciudad de Duitama, Boyacá, y municipios aledaños. Llegamos a donde lo necesites.'
+      description: 'Servicio de taxi en Duitama - Boyacá y/o cualquier parte del país. Llegamos a donde lo necesites.'
     },
     {
       icon: <FaUsers />,
@@ -31,7 +31,7 @@ const Servicios = () => {
     <section className="servicios" id="servicios">
       <div className="servicios-container">
         <div className="servicios-header">
-          <h2 className="section-title">¿Por qué elegir Tax Duitama?</h2>
+          <h2 className="section-title">¿Por qué elegir Tax Duitama S.A.S.?</h2>
           <p className="section-subtitle">
             Ofrecemos el mejor servicio de taxis en Duitama, Boyacá, con múltiples beneficios 
             para nuestros clientes. Tu seguridad y comodidad son nuestra prioridad.

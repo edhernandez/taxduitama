@@ -29,7 +29,7 @@ const Footer = () => {
               <strong>Dirección:</strong> Duitama (Boyacá), Carrera 19 No. 4-50
             </p>
             <p className="footer-text">
-              <strong>Teléfono:</strong> +57 320 978 1909
+              <strong>Email:</strong> taxduitama@gmail.com
             </p>
           </div>
 

@@ -17,9 +17,9 @@ const Nosotros = () => {
       <div className="nosotros-container">
         <div className="nosotros-content">
           <div className="nosotros-text">
-            <h2 className="section-title">Más de 6 años sirviendo a Duitama con taxis de calidad</h2>
+            <h2 className="section-title">Años sirviendo a Duitama con taxis de calidad</h2>
             <p className="nosotros-description">
-              En Tax Duitama nos enorgullece ser parte de la comunidad de Duitama, Boyacá. 
+              En Tax Duitama S.A.S. nos enorgullece ser parte de la comunidad de Duitama, Boyacá. 
               Hemos transportado miles de familias y seguimos comprometidos con brindar 
               el mejor servicio de taxi en Duitama con calidad, seguridad y confianza en cada viaje.
             </p>
@@ -42,7 +42,6 @@ const Nosotros = () => {
                 className="hero-image"
               />
               <div className="experience-badge">
-                <div className="badge-number">6+</div>
                 <div className="badge-text">Años de experiencia</div>
               </div>
             </div>

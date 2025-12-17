@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaWhatsapp, FaMobileAlt } from 'react-icons/fa'
+import { FaWhatsapp } from 'react-icons/fa'
 import './Hero.css'
 
 const Hero = () => {
@@ -12,7 +12,7 @@ const Hero = () => {
         </div>
         
         <h1 className="hero-title">
-          Tax Duitama - Taxis en Duitama<br />
+          Tax Duitama S.A.S. - Taxis en Duitama<br />
           <span className="title-highlight">Tu transporte seguro 24/7</span>
         </h1>
         
@@ -36,10 +36,13 @@ const Hero = () => {
             href="https://play.google.com/store/apps/details?id=com.duitaxicootrachica.duitama&hl=es_CO"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-secondary"
+            className="btn-app-only"
           >
-            <FaMobileAlt />
-            Usar App
+            <img 
+              src="https://play-lh.googleusercontent.com/UVmiak5AVTbkUxKom5EnmFm9elopJqYXxGz33fN6MoJ01qb_FzvEU3G1R2S7rwHAwt4=w240-h480-rw" 
+              alt="Descargar Dui taxi App"
+              className="app-icon-button"
+            />
           </a>
         </div>
       </div>

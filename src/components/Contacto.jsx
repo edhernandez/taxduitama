@@ -18,16 +18,6 @@ const Contacto = () => {
         <div className="contacto-cards">
           <div className="contacto-card">
             <div className="contacto-icon">
-              <FaPhone />
-            </div>
-            <h3 className="contacto-card-title">Teléfono</h3>
-            <a href="tel:+573209781909" className="contacto-link">
-              +57 320 978 1909
-            </a>
-          </div>
-
-          <div className="contacto-card">
-            <div className="contacto-icon">
               <FaWhatsapp />
             </div>
             <h3 className="contacto-card-title">WhatsApp</h3>
@@ -38,6 +28,19 @@ const Contacto = () => {
               className="contacto-link"
             >
               +57 323 834 4040
+            </a>
+          </div>
+
+          <div className="contacto-card">
+            <div className="contacto-icon">
+              <FaEnvelope />
+            </div>
+            <h3 className="contacto-card-title">Email</h3>
+            <a 
+              href="mailto:taxduitama@gmail.com" 
+              className="contacto-link"
+            >
+              taxduitama@gmail.com
             </a>
           </div>
 
@@ -62,7 +65,7 @@ const Contacto = () => {
         </div>
 
         <div className="app-section">
-          <h3 className="app-title">Descarga la App de Tax Duitama</h3>
+          <h3 className="app-title">Descarga la App de Tax Duitama S.A.S.</h3>
           <p className="app-description">
             Solicita tu taxi en Duitama de forma rápida y fácil desde tu dispositivo móvil. 
             Disponible en Google Play Store.
@@ -71,10 +74,13 @@ const Contacto = () => {
             href="https://play.google.com/store/apps/details?id=com.duitaxicootrachica.duitama&hl=es_CO"
             target="_blank"
             rel="noopener noreferrer"
-            className="app-button"
+            className="app-button-only"
           >
-            <FaDownload />
-            Descargar en Google Play
+            <img 
+              src="https://play-lh.googleusercontent.com/UVmiak5AVTbkUxKom5EnmFm9elopJqYXxGz33fN6MoJ01qb_FzvEU3G1R2S7rwHAwt4=w240-h480-rw" 
+              alt="Descargar Dui taxi App"
+              className="app-icon-large"
+            />
           </a>
         </div>
 

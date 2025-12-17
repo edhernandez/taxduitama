@@ -23,7 +23,7 @@ const Logo = ({ variant = 'full', className = '' }) => {
       <div className={`logo ${variant} ${className} logo-fallback`}>
         <span className="logo-text-fallback">TAX DUITAMA</span>
         {variant === 'full' && <span className="logo-text-fallback-small">S.A.S</span>}
-        {variant === 'simple' && <span className="logo-company-name">TAX DUITAMA</span>}
+        {variant === 'simple' && <span className="logo-company-name">TAX DUITAMA S.A.S.</span>}
       </div>
     )
   }
@@ -37,8 +37,8 @@ const Logo = ({ variant = 'full', className = '' }) => {
         onError={() => setImageError(true)}
         loading="lazy"
       />
-      {variant === 'simple' && (
-        <span className="logo-company-name">TAX DUITAMA</span>
+      {variant === 'simple' && !imageError && (
+        <span className="logo-company-name">TAX DUITAMA S.A.S.</span>
       )}
     </div>
   )
