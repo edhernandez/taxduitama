@@ -37,7 +37,7 @@ const Header = () => {
         
         <nav className={`nav ${isMenuOpen ? 'open' : ''}`} aria-label="Navegación principal">
           <a href="#servicios" onClick={(e) => { e.preventDefault(); scrollToSection('servicios'); }} aria-label="Servicios de taxis en Duitama">Servicios</a>
-          <a href="#nosotros" onClick={(e) => { e.preventDefault(); scrollToSection('nosotros'); }} aria-label="Sobre Tax Duitama S.A.S.">Nosotros</a>
+          <a href="#nuestra-app" onClick={(e) => { e.preventDefault(); scrollToSection('nuestra-app'); }} aria-label="Nuestra App - Cómo usar la aplicación">Nuestra App</a>
           <a href="#contacto" onClick={(e) => { e.preventDefault(); scrollToSection('contacto'); }} aria-label="Contactar Tax Duitama S.A.S.">Contacto</a>
           <div className="header-buttons-mobile">
             <a 

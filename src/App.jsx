@@ -2,12 +2,10 @@ import React from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import VideoPrincipal from './components/VideoPrincipal'
-import Servicios from './components/Servicios'
+import ServiciosNosotros from './components/ServiciosNosotros'
 import VideoApp from './components/VideoApp'
-import Nosotros from './components/Nosotros'
 import MisionVision from './components/MisionVision'
 import Contacto from './components/Contacto'
-import LinksInteres from './components/LinksInteres'
 import Footer from './components/Footer'
 import StructuredData from './components/StructuredData'
 import './App.css'
@@ -19,11 +17,9 @@ function App() {
       <Header />
       <Hero />
       <VideoPrincipal />
-      <Servicios />
+      <ServiciosNosotros />
       <VideoApp />
-      <Nosotros />
       <MisionVision />
-      <LinksInteres />
       <Contacto />
       <Footer />
     </div>

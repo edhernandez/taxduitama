@@ -37,9 +37,31 @@ const Footer = () => {
             <h4 className="footer-subtitle">Servicios</h4>
             <ul className="footer-links">
               <li><a href="#servicios">Servicios</a></li>
-              <li><a href="#nosotros">Nosotros</a></li>
+              <li><a href="#nuestra-app">Nuestra App</a></li>
               <li><a href="#contacto">Contacto</a></li>
             </ul>
+          </div>
+
+          <div className="footer-section footer-links-interes">
+            <h4 className="footer-subtitle">Links de Interés</h4>
+            <div className="footer-links-grid">
+              <a 
+                href="https://www.runt.gov.co/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="footer-link-external"
+              >
+                RUNT
+              </a>
+              <a 
+                href="https://www.fcm.org.co/simit/#/home-public" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="footer-link-external"
+              >
+                SIMIT
+              </a>
+            </div>
           </div>
         </div>
 

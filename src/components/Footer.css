@@ -81,6 +81,29 @@
   color: #e6b800;
 }
 
+.footer-links-interes {
+  min-width: 150px;
+}
+
+.footer-links-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-link-external {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+  padding: 0.25rem 0;
+}
+
+.footer-link-external:hover {
+  color: #e6b800;
+  text-decoration: underline;
+}
+
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 1.5rem;
@@ -101,6 +124,12 @@
   .footer-content {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+
+  .footer-links-grid {
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
   }
 }
 

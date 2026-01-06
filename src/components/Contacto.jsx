@@ -1,13 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { FaMapMarkerAlt, FaClock, FaWhatsapp } from 'react-icons/fa'
 import './Contacto.css'
 
 const Contacto = () => {
-  const [appIconError, setAppIconError] = useState(false)
-
-  const appIconSrc = appIconError 
-    ? 'https://play-lh.googleusercontent.com/UVmiak5AVTbkUxKom5EnmFm9elopJqYXxGz33fN6MoJ01qb_FzvEU3G1R2S7rwHAwt4=w240-h480-rw'
-    : '/images/logos/Duitaxi.jfif'
 
   return (
     <section className="contacto" id="contacto">
@@ -69,29 +64,6 @@ const Contacto = () => {
               title="Ubicación Tax Duitama S.A.S. - Carrera 19 No. 4-50, Duitama, Boyacá"
             />
           </div>
-        </div>
-
-        <div className="app-section">
-          <h3 className="app-title">Descarga la App de Tax Duitama S.A.S.</h3>
-          <p className="app-description">
-            Solicita tu taxi en Duitama de forma rápida y fácil desde tu dispositivo móvil. 
-            Disponible en Google Play Store.
-          </p>
-          <a 
-            href="https://play.google.com/store/apps/details?id=com.duitaxicootrachica.duitama&hl=es_CO"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="app-button-only"
-          >
-            <img 
-              src={appIconSrc}
-              alt="Descargar Dui taxi App"
-              className="app-icon-large"
-              onError={() => setAppIconError(true)}
-              crossOrigin="anonymous"
-              referrerPolicy="no-referrer"
-            />
-          </a>
         </div>
 
         <div className="cta-section">

@@ -195,70 +195,6 @@
   display: block;
 }
 
-.app-section {
-  background: var(--bg-white);
-  padding: 3.5rem;
-  border-radius: 24px;
-  box-shadow: var(--shadow-md);
-  text-align: center;
-  margin-bottom: 2rem;
-  border: 1px solid rgba(212, 175, 55, 0.1);
-  position: relative;
-  z-index: 1;
-}
-
-.app-icon-container {
-  margin-bottom: 1.5rem;
-  display: flex;
-  justify-content: center;
-}
-
-.app-icon {
-  width: 240px;
-  height: 240px;
-  border-radius: 40px;
-  box-shadow: var(--shadow-lg);
-  object-fit: contain;
-  border: 4px solid rgba(212, 175, 55, 0.25);
-}
-
-.app-title {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #333;
-  margin-bottom: 1rem;
-}
-
-.app-description {
-  font-size: 1.125rem;
-  color: #666;
-  margin-bottom: 2rem;
-}
-
-.app-button-only {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  border: none;
-  background: transparent;
-  text-decoration: none;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.app-icon-large {
-  width: 200px;
-  height: 200px;
-  border-radius: 24px;
-  object-fit: contain;
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.app-icon-large:hover {
-  transform: translateY(-8px) scale(1.08);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
-}
 
 .cta-section {
   text-align: center;
@@ -303,21 +239,6 @@
     gap: 1.5rem;
   }
 
-  .app-section {
-    padding: 2rem 1.5rem;
-  }
-
-  .app-icon {
-    width: 180px;
-    height: 180px;
-  }
-
-  .app-icon-large {
-    width: 160px;
-    height: 160px;
-  }
-
-  .app-button-only,
   .cta-button {
     width: 100%;
     justify-content: center;

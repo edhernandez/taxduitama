@@ -1,11 +1,16 @@
 import React, { useState, useRef } from 'react'
-import { FaPlay, FaPause, FaMobileAlt } from 'react-icons/fa'
+import { FaPlay, FaPause } from 'react-icons/fa'
 import './VideoApp.css'
 
 const VideoApp = () => {
   const [isPlaying, setIsPlaying] = useState(false)
   const [isLoaded, setIsLoaded] = useState(false)
+  const [appIconError, setAppIconError] = useState(false)
   const videoRef = useRef(null)
+
+  const appIconSrc = appIconError 
+    ? 'https://play-lh.googleusercontent.com/UVmiak5AVTbkUxKom5EnmFm9elopJqYXxGz33fN6MoJ01qb_FzvEU3G1R2S7rwHAwt4=w240-h480-rw'
+    : '/images/logos/Duitaxi.jfif'
 
   const togglePlay = () => {
     if (videoRef.current) {
@@ -23,12 +28,9 @@ const VideoApp = () => {
   }
 
   return (
-    <section className="video-app-section">
+    <section className="video-app-section" id="nuestra-app">
       <div className="video-app-container">
         <div className="video-app-header">
-          <div className="video-app-icon">
-            <FaMobileAlt />
-          </div>
           <h2 className="video-app-title">¿Cómo usar nuestra App?</h2>
           <p className="video-app-subtitle">
             Aprende a solicitar tu taxi en Duitama de forma rápida y fácil desde tu dispositivo móvil
@@ -80,17 +82,31 @@ const VideoApp = () => {
             </div>
           </div>
 
-          <div className="video-app-cta">
-            <p className="cta-text">¿Listo para probar la app?</p>
-            <a 
-              href="https://play.google.com/store/apps/details?id=com.duitaxicootrachica.duitama&hl=es_CO"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cta-button-app"
-            >
-              <FaMobileAlt />
-              Descargar App
-            </a>
+          <div className="app-download-section">
+            <div className="app-download-content">
+              <h3 className="app-download-title">Descarga la App de Duitaxi</h3>
+              <p className="app-download-description">
+                Solicita tu taxi en Duitama de forma rápida y fácil desde tu dispositivo móvil. 
+                Disponible en Google Play Store.
+              </p>
+              <div className="app-download-options">
+                <a 
+                  href="https://play.google.com/store/apps/details?id=com.duitaxicootrachica.duitama&hl=es_CO"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="app-icon-link"
+                >
+                  <img 
+                    src={appIconSrc}
+                    alt="Descargar Dui taxi App"
+                    className="app-icon-large"
+                    onError={() => setAppIconError(true)}
+                    crossOrigin="anonymous"
+                    referrerPolicy="no-referrer"
+                  />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

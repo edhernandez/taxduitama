@@ -26,9 +26,9 @@ const VideoPrincipal = () => {
     <section className="video-principal-section">
       <div className="video-principal-container">
         <div className="video-principal-header">
-          <h2 className="video-principal-title">Conoce Tax Duitama S.A.S.</h2>
+          <h2 className="video-principal-title">Nuestra Historia en Video</h2>
           <p className="video-principal-subtitle">
-            Descubre quiénes somos y cómo trabajamos para brindarte el mejor servicio de taxis en Duitama
+            Conoce cómo trabajamos para brindarte el mejor servicio de taxis en Duitama
           </p>
         </div>
 
