@@ -2,6 +2,7 @@
   background-color: #1a1a2e;
   color: white;
   padding: 3rem 2rem 1.5rem;
+  border-top: 3px solid rgba(255, 184, 0, 0.2);
 }
 
 .footer-container {
