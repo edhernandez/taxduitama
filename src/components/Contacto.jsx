@@ -5,7 +5,7 @@ import './Contacto.css'
 const Contacto = () => {
 
   return (
-    <section className="contacto" id="contacto">
+    <section className="contacto" id="contacto" style={{ backgroundColor: '#1a1a2e' }}>
       <div className="contacto-hero">
         <div className="contacto-hero-content">
           <h2 className="contacto-title">¿Necesitas un taxi en Duitama?</h2>

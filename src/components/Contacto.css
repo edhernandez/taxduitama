@@ -1,5 +1,5 @@
 .contacto {
-  background-color: #1a1a2e;
+  background-color: #1a1a2e !important;
   padding: 0;
   position: relative;
   overflow: hidden;
@@ -33,13 +33,13 @@
 .contacto-title {
   font-size: clamp(2rem, 4vw, 3.5rem);
   font-weight: 700;
-  color: white;
+  color: #ffffff !important;
   margin-bottom: 1rem;
 }
 
 .contacto-subtitle {
   font-size: 1.25rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.9) !important;
   max-width: 700px;
   margin: 0 auto;
 }
@@ -194,7 +194,6 @@
   border-radius: 20px;
   display: block;
 }
-
 
 .cta-section {
   text-align: center;
