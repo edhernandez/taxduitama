@@ -18,57 +18,46 @@ const ImageCarousel = () => {
     cssEase: 'linear'
   }
 
-  // Placeholder images - el usuario puede reemplazarlas con imágenes reales
+  // Imágenes de la flota de vehículos de Tax Duitama S.A.S.
   const slides = [
     {
       type: 'image',
-      src: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1200&h=600&fit=crop',
-      alt: 'Tax Duitama S.A.S. - Vehículos de taxi en Duitama, Boyacá disponibles 24/7',
-      title: 'Nuestros Vehículos en Duitama'
+      src: '/images/fotos_taxis/1.jpg',
+      alt: 'Tax Duitama S.A.S. - Vehículo de taxi en Duitama, Boyacá - Flota de vehículos seguros y confiables',
+      title: 'Nuestra Flota de Vehículos'
     },
     {
       type: 'image',
-      src: 'https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=1200&h=600&fit=crop',
-      alt: 'Servicio de taxis en Duitama confiable y seguro',
-      title: 'Servicio Confiable en Duitama'
-    },
-    {
-      type: 'video',
-      src: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
-      title: 'Conoce Nuestro Servicio de Taxis en Duitama'
+      src: '/images/fotos_taxis/2.jpg',
+      alt: 'Tax Duitama S.A.S. - Servicio de taxis en Duitama con vehículos en perfecto estado',
+      title: 'Vehículos en Excelente Estado'
     },
     {
       type: 'image',
-      src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=600&fit=crop',
-      alt: 'Conductores profesionales de taxis en Duitama certificados y experimentados',
-      title: 'Conductores Certificados en Duitama'
+      src: '/images/fotos_taxis/3.jpg',
+      alt: 'Tax Duitama S.A.S. - Transporte seguro y confiable en Duitama, Boyacá',
+      title: 'Transporte Seguro y Confiable'
+    },
+    {
+      type: 'image',
+      src: '/images/fotos_taxis/4.jpg',
+      alt: 'Tax Duitama S.A.S. - Servicio de taxis 24/7 en Duitama con conductores certificados',
+      title: 'Servicio Disponible 24/7'
     }
   ]
 
   return (
     <div className="carousel-container">
-      <h3 className="carousel-title">Galería de Taxis en Duitama</h3>
+      <h3 className="carousel-title">Nuestra Flota de Vehículos</h3>
       <Slider {...settings} className="image-carousel">
         {slides.map((slide, index) => (
           <div key={index} className="carousel-slide">
-            {slide.type === 'video' ? (
-              <div className="video-container">
-                <video controls className="carousel-video">
-                  <source src={slide.src} type="video/mp4" />
-                  Tu navegador no soporta el elemento de video.
-                </video>
-                <div className="slide-overlay">
-                  <h4>{slide.title}</h4>
-                </div>
+            <div className="image-container">
+              <img src={slide.src} alt={slide.alt} className="carousel-image" loading="lazy" />
+              <div className="slide-overlay">
+                <h4>{slide.title}</h4>
               </div>
-            ) : (
-              <div className="image-container">
-                <img src={slide.src} alt={slide.alt} className="carousel-image" />
-                <div className="slide-overlay">
-                  <h4>{slide.title}</h4>
-                </div>
-              </div>
-            )}
+            </div>
           </div>
         ))}
       </Slider>

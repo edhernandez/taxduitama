@@ -6,6 +6,11 @@ import './Header.css'
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const [appIconError, setAppIconError] = useState(false)
+
+  const appIconSrc = appIconError 
+    ? 'https://play-lh.googleusercontent.com/UVmiak5AVTbkUxKom5EnmFm9elopJqYXxGz33fN6MoJ01qb_FzvEU3G1R2S7rwHAwt4=w240-h480-rw'
+    : '/images/logos/Duitaxi.jfif'
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,9 +48,12 @@ const Header = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               <img 
-                src="https://play-lh.googleusercontent.com/UVmiak5AVTbkUxKom5EnmFm9elopJqYXxGz33fN6MoJ01qb_FzvEU3G1R2S7rwHAwt4=w240-h480-rw" 
+                src={appIconSrc}
                 alt="Descargar Dui taxi App"
                 className="app-icon-button"
+                onError={() => setAppIconError(true)}
+                crossOrigin="anonymous"
+                referrerPolicy="no-referrer"
               />
             </a>
             <a 
@@ -69,9 +77,12 @@ const Header = () => {
             className="btn-app-only"
           >
             <img 
-              src="https://play-lh.googleusercontent.com/UVmiak5AVTbkUxKom5EnmFm9elopJqYXxGz33fN6MoJ01qb_FzvEU3G1R2S7rwHAwt4=w240-h480-rw" 
+              src={appIconSrc}
               alt="Descargar Dui taxi App"
               className="app-icon-button"
+              onError={() => setAppIconError(true)}
+              crossOrigin="anonymous"
+              referrerPolicy="no-referrer"
             />
           </a>
           <a 

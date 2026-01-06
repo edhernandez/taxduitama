@@ -102,13 +102,15 @@
   background: transparent;
   text-decoration: none;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 60px;
+  height: 60px;
 }
 
 .app-icon-button {
-  width: 50px;
-  height: 50px;
-  border-radius: 12px;
-  object-fit: contain;
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;
+  object-fit: cover;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -224,8 +226,8 @@
   }
 
   .app-icon-button {
-    width: 45px;
-    height: 45px;
+    width: 55px;
+    height: 55px;
   }
 }
 

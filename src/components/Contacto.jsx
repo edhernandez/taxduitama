@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaMapMarkerAlt, FaClock, FaWhatsapp } from 'react-icons/fa'
 import './Contacto.css'
 
 const Contacto = () => {
+  const [appIconError, setAppIconError] = useState(false)
+
+  const appIconSrc = appIconError 
+    ? 'https://play-lh.googleusercontent.com/UVmiak5AVTbkUxKom5EnmFm9elopJqYXxGz33fN6MoJ01qb_FzvEU3G1R2S7rwHAwt4=w240-h480-rw'
+    : '/images/logos/Duitaxi.jfif'
+
   return (
     <section className="contacto" id="contacto">
       <div className="contacto-hero">
@@ -78,9 +84,12 @@ const Contacto = () => {
             className="app-button-only"
           >
             <img 
-              src="https://play-lh.googleusercontent.com/UVmiak5AVTbkUxKom5EnmFm9elopJqYXxGz33fN6MoJ01qb_FzvEU3G1R2S7rwHAwt4=w240-h480-rw" 
+              src={appIconSrc}
               alt="Descargar Dui taxi App"
               className="app-icon-large"
+              onError={() => setAppIconError(true)}
+              crossOrigin="anonymous"
+              referrerPolicy="no-referrer"
             />
           </a>
         </div>
