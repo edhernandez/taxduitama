@@ -1,7 +1,9 @@
 import React from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
+import VideoPrincipal from './components/VideoPrincipal'
 import Servicios from './components/Servicios'
+import VideoApp from './components/VideoApp'
 import Nosotros from './components/Nosotros'
 import MisionVision from './components/MisionVision'
 import Contacto from './components/Contacto'
@@ -16,7 +18,9 @@ function App() {
       <StructuredData />
       <Header />
       <Hero />
+      <VideoPrincipal />
       <Servicios />
+      <VideoApp />
       <Nosotros />
       <MisionVision />
       <LinksInteres />
