@@ -118,7 +118,7 @@
 }
 
 .contacto-link {
-  color: #e6b800;
+  color: #000;
   text-decoration: none;
   font-weight: 600;
   font-size: 1.125rem;
@@ -126,7 +126,7 @@
 }
 
 .contacto-link:hover {
-  color: #d4a600;
+  color: #333;
   text-decoration: underline;
 }
 

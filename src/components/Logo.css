@@ -18,8 +18,8 @@
 }
 
 /* Para el header - logo completo */
-.logo.full .logo-image-full {
-  max-height: 70px;
+.header .logo.full .logo-image-full {
+  max-height: 100px;
   width: auto;
   height: auto;
 }
@@ -40,9 +40,10 @@
 }
 
 /* Para el footer - logo completo */
-.logo.full .logo-image-full {
-  max-width: 350px;
-  width: 100%;
+.footer .logo.full .logo-image-full {
+  max-height: 105px;
+  max-width: 500px;
+  width: auto;
   height: auto;
 }
 
@@ -73,16 +74,17 @@
 }
 
 @media (max-width: 768px) {
-  .logo.full .logo-image-full {
-    max-height: 50px;
+  .header .logo.full .logo-image-full {
+    max-height: 70px;
   }
 
   .logo.simple .logo-image-simple {
     max-height: 45px;
   }
 
-  .logo.full .logo-image-full {
-    max-width: 280px;
+  .footer .logo.full .logo-image-full {
+    max-height: 70px;
+    max-width: 400px;
   }
 
   .logo.simple .logo-text-fallback {

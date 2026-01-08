@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Logo.css'
 
-const Logo = ({ variant = 'full', className = '' }) => {
+const Logo = ({ variant = 'full', className = '', logoName }) => {
   const [imageError, setImageError] = useState(false)
   
   // Intentar diferentes formatos de imagen
@@ -9,9 +9,12 @@ const Logo = ({ variant = 'full', className = '' }) => {
     return `/images/logos/${baseName}.jpeg`
   }
 
-  const imageSrc = variant === 'full' 
-    ? getImageSrc('logo-completo')
-    : getImageSrc('logo-simple')
+  // Si se proporciona logoName, usarlo; si no, usar el comportamiento por defecto
+  const imageSrc = logoName 
+    ? getImageSrc(logoName)
+    : (variant === 'full' 
+      ? getImageSrc('logo-completo')
+      : getImageSrc('logo-simple'))
 
   const altText = variant === 'full'
     ? 'TAX DUITAMA S.A.S. - Logo Completo'

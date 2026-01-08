@@ -23,7 +23,7 @@ const Servicios = () => {
     {
       icon: <FaUsers />,
       title: 'Servicio Familiar',
-      description: 'Transporte para toda la familia con asientos especiales disponibles.'
+      description: 'Transporte para toda la familia con asientos cómodos disponibles para sus usuarios.'
     }
   ]
 

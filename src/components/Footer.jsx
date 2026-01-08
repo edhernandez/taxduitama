@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-section">
             <div className="footer-logo">
-              <Logo variant="full" />
+              <Logo variant="full" logoName="logo-completo-2" />
             </div>
             <p className="footer-slogan">
               "Viaja con tranquilidad. Tu seguridad es nuestra prioridad"
@@ -30,6 +30,9 @@ const Footer = () => {
             </p>
             <p className="footer-text">
               <strong>Email:</strong> taxduitama@gmail.com
+            </p>
+            <p className="footer-text">
+              <strong>PQR:</strong> 3209781909
             </p>
           </div>
 
